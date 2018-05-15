@@ -16,7 +16,7 @@ int main (int argc, char *argv[]) {
 
   int* test = ouverture_fichier("test.txt", &compteur);
   int* test2 = deux_plus_petites_valeurs(test);
-  // printf("%d %d %p\n", test2[0], test2[1], compteur);
+   printf("%d %d %d\n", test2[0], test2[1], compteur);
 
 
 /*

@@ -39,6 +39,10 @@ int* deux_plus_petites_valeurs(int* tableau) {
     deux_indice_min = INT_MAX;
   }
 
+  if (deux_indice_min > 127) {
+    deux_indice_min = INT_MAX;
+  }
+
   /* On stocke les deux indices dans le tableau que l'on retourne*/
   int *indices = malloc(sizeof(int)*2); // Allocation de 2*sizeof(int) octets dans la mémoire pour stocker le tableau
   indices[0] = indice_min;
