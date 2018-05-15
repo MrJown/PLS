@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "arbre.h"
-
-
+#include "lecture_traitement_fichier.h"
 
 
 /* Ouverture du fichier */
