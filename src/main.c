@@ -6,6 +6,20 @@
 #include "plus_petites_valeurs.h"
 
 int main (int argc, char *argv[]) {
+
+  // Test de la fonction deux_plus_petites_valeurs
+  int compteur = 0;
+//  int * test = malloc(sizeof(int)*128);
+//  for (int i = 0; i < 128; i++) {
+//    test[i] = 0;
+//  }
+
+  int* test = ouverture_fichier("test.txt", &compteur);
+  int* test2 = deux_plus_petites_valeurs(test);
+  // printf("%d %d %p\n", test2[0], test2[1], compteur);
+
+
+/*
   // Test de la fonction deux_petites_valeurs_noeud
 
       noeud* test = malloc(sizeof(noeud));
@@ -25,6 +39,6 @@ int main (int argc, char *argv[]) {
 
       int* test5 = deux_petites_valeurs_noeud(test6);
       printf("%d %d\n", test5[0], test5[1]);
-
+*/
   return 0;
 }

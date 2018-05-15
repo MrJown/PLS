@@ -6,7 +6,7 @@ all: main clean
 
 # Creation de l'executable
 main: $(OBJS)
-		$(CC) $(OBJS) -o ../bin/$@ -lm
+		$(CC) $(OBJS) -o ../bin/$@ -lm -g
 
 # Creation des objets
 %.o: %.c
